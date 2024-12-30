@@ -2,7 +2,8 @@ function makeid(l) {
 	let s="QWERTYUIOPASDFGHJKLMNBVCXZqwertyuiopasdfghjklzxcvbnm1234567890";
 	let result="";
 	for(let i=0;i<l;i++){
-		int x=Math.random()*s.length;
+		
+		int x=Math.floor(Math.random()*s.length);
 		result+=s.charAt(x);
 	}
 	return result;
